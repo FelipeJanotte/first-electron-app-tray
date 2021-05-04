@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "electron": "^12.0.6",
+    "electron-packager": "^15.2.0",
+    "electron-store": "^8.0.0",
+    "electron-winstaller": "^5.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "name": "app-tray",
+  "version": "1.0.0",
+  "description": "Open your VSCode projects.",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --icon=assets/app.ico"
+  },
+  "author": "Felipe Augusto Janotte",
+  "license": "ISC"
+}
