@@ -29,10 +29,10 @@ app.whenReady().then(() => {
 
   const contextMenu = Menu.buildFromTemplate([
     {
-      label: 'Opções',
+      label: 'Options',
       submenu: [
         {
-          label: 'Adicionar novo projeto',
+          label: 'Add new project',
           type: 'normal',
           click: () => {
             dialog
@@ -66,14 +66,14 @@ app.whenReady().then(() => {
           },
         },
         {
-          label: 'Fechar programa',
+          label: 'Close app',
           type: 'normal',
           click: () => {
             app.quit();
           },
         },
         {
-          label: 'Limpar lista',
+          label: 'Clear list',
           type: 'normal',
           click: () => {
             store.clear();
@@ -85,7 +85,7 @@ app.whenReady().then(() => {
       ],
     },
     {
-      label: 'Lista',
+      label: 'List',
       type: 'separator',
     },
     ...items,
